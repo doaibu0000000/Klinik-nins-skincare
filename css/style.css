@@ -918,6 +918,20 @@ a { color: var(--green-700); }
   .testimonials {
     background: #14221D;
   }
+  .testimonials .section-head h2 {
+    color: #FAF6EF;
+  }
+  .testimonials .section-head h2 em {
+    color: #B4CBB0;
+  }
+  .testimonials .btn-outline {
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #FAF6EF;
+  }
+  .testimonials .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+  }
   .testi-card:not(.testi-featured) {
     background: #1B2F28;
     border-color: rgba(255, 255, 255, 0.12);
