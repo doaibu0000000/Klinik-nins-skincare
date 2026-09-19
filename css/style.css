@@ -1054,9 +1054,30 @@ a { color: var(--green-700); }
 
 .location-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.75rem;
   margin-bottom: 1.4rem;
+}
+.location-actions .btn {
+  white-space: nowrap;
+  padding: 0.75rem clamp(0.85rem, 1.8vw, 1.35rem);
+  font-size: 0.95rem;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 520px) {
+  .location-actions {
+    gap: 0.5rem;
+  }
+  .location-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0.75rem 0.4rem;
+    font-size: clamp(0.8rem, 3.4vw, 0.92rem);
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .location-phone {
