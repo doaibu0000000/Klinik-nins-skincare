@@ -924,11 +924,11 @@ a { color: var(--green-700); }
   .testimonials .section-head h2 em {
     color: #B4CBB0;
   }
-  .testimonials .btn-outline {
+  .testimonials .btn-ghost {
     border-color: rgba(255, 255, 255, 0.25);
     color: #FAF6EF;
   }
-  .testimonials .btn-outline:hover {
+  .testimonials .btn-ghost:hover {
     background: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
   }
