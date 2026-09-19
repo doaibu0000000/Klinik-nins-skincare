@@ -1053,30 +1053,27 @@ a { color: var(--green-700); }
 .hours-table tr:last-child th, .hours-table tr:last-child td { border-bottom: 0; }
 
 .location-actions {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 0.75rem;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch;
+  gap: 0.5rem;
   margin-bottom: 1.4rem;
+  width: 100%;
 }
 .location-actions .btn {
+  flex: 1 1 50%;
+  width: 100%;
+  min-width: 0; /* Prevents flexbox overflow */
   white-space: nowrap;
-  padding: 0.75rem clamp(0.85rem, 1.8vw, 1.35rem);
-  font-size: 0.95rem;
-  flex: 0 0 auto;
+  padding: 0.75rem 0.25rem;
+  font-size: clamp(0.75rem, 3vw, 0.95rem);
+  text-align: center;
+  justify-content: center;
 }
 
 @media (max-width: 520px) {
   .location-actions {
-    gap: 0.5rem;
-  }
-  .location-actions .btn {
-    flex: 1 1 0;
-    min-width: 0;
-    padding: 0.75rem 0.4rem;
-    font-size: clamp(0.8rem, 3.4vw, 0.92rem);
-    text-align: center;
-    justify-content: center;
+    gap: 0.4rem;
   }
 }
 
